@@ -4,8 +4,8 @@ public class Table extends Furniture {
 
     private int persons;
 
-    public Table(String color, String size, String material, int persons) {
-        super(color, size, material);
+    public Table(String color, String size, String material, int persons, int price) {
+        super(color, size, material, price);
         this.persons = persons;
     }
 
@@ -20,7 +20,7 @@ public class Table extends Furniture {
 
     @Override
     public String toString() {
-        return "Hello, I`m a Table. I scream"+this.makenoise()+"I`m for "+this.getPersons()+" persons. My color is "+this.getColor();
+        return "Hello, I`m a Table. I scream "+this.makenoise()+" I`m for "+this.getPersons()+" persons. My color is "+this.getColor()+" My size is "+this.getSize()+" I am made from "+this.getMaterial()+" I cost "+this.getPrice();
     }
 
     public int getPersons() {

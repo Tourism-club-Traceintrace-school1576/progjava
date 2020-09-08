@@ -4,11 +4,13 @@ public abstract class Furniture {
     private String color;
     private String size;
     private String material;
+    private int price;
 
-    public Furniture(String color, String size, String material){
+    public Furniture(String color, String size, String material, int price){
         this.color = color;
         this.material = material;
         this.size = size;
+        this.price = price;
     }
 
     public abstract String makenoise();
@@ -37,5 +39,13 @@ public abstract class Furniture {
 
     public void setMaterial(String material) {
         this.material = material;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }

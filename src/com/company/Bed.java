@@ -3,19 +3,20 @@ package com.company;
 public class Bed extends Furniture {
 
     private int persons;
-    public Bed(String color, String size, String material, int persons) {
-        super(color, size, material);
+    public Bed(String color, String size, String material, int persons, int price) {
+        super(color, size, material, price);
         this.persons = persons;
     }
 
     @Override
     public String makenoise() {
-        return null;
+        return "Lalalalala";
     }
 
     @Override
     public String toString() {
-        return null;
+        return "Hello, I`m a Bed. I scream"+this.makenoise()+" I`m for "+this.getPersons()+" persons. I am made from "+this.getMaterial()+"  I cost "+this.getPrice();
+
     }
 
     public int getPersons() {

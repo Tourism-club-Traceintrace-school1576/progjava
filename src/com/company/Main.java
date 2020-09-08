@@ -1,12 +1,13 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
-        double sum = 0;
-	    for(double i=1;i<=10;i++){
-	        System.out.println(1/i);
+        Random random = new Random();
+        for(int i=0;i<10;i++){
+            System.out.println(random.nextInt(10));
         }
-	    System.out.println(sum);
     }
 }

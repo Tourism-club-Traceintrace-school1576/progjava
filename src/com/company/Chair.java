@@ -4,8 +4,8 @@ public class Chair extends  Furniture {
 
     private String type;
     private int persons;
-    public Chair(String color, String size, String material, String type, int persons) {
-        super(color, size, material);
+    public Chair(String color, String size, String material, String type, int persons, int price) {
+        super(color, size, material, price);
         this.type = type;
         this.persons = persons;
     }
@@ -17,7 +17,7 @@ public class Chair extends  Furniture {
 
     @Override
     public String toString() {
-        return "Hello, I`m a Chair. I scream"+this.makenoise()+"I`m for "+this.getPersons()+" persons. My type is "+this.getType();
+        return "Hello, I`m a Chair. I scream "+this.makenoise()+" I`m for "+this.getPersons()+" persons. My type is "+this.getType()+" I am made from "+this.getMaterial()+" I cost "+this.getPrice();
     }
 
     public String getType() {
